@@ -14,16 +14,5 @@ def home():
 def projects():
     return render_template("projects.html")
 
-
-@app.route("/skills")
-def skills():
-    return redirect(url_for("home", _anchor="skills"))
-
-
-@app.route("/contact")
-def contact():
-    return redirect(url_for("home", _anchor="contact"))
-
-
 if __name__ == "__main__":
     app.run(debug=True)
