@@ -13,7 +13,7 @@
         <nav class="topnav">
             <span class="nav-name">Kaneme</span>
             <div class="nav-links">
-                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -29,13 +29,13 @@
                 <div class="desc">
                     <h3>
                         <br>
-                        17y/o Cybersecurity student, offensive-focused.<br>
+                        17y/o Cybersecurity student, offensive-focused, web developer.<br>
                         <br>
                         Bug Bounty, web & network vulnerability research, Python tool development. <br>
                         <br>Soon @ Epitech Lille.
                     </h3>
                 </div>
-                <a href="{{ url_for('projects') }}">[ Projects → ]</a>
+                <a href="#projects">[ Projects → ]</a>
             </div>
             <div class="profile">
                 <img src="{{ url_for('static', filename='img/pdp.jpg') }}" alt="Kaneme">
@@ -91,12 +91,13 @@
                     <h1>MineScanner - Scanning Tool</h1>
                     <p>Multi-threaded Minecraft server scanner written in Python scans IP ranges and port intervals to detect active servers.</p>
                 </a>
-                <a class="p3" href="https://nationsglory.fr" target="_blank">
-                    <img id="nationsglory-logo" src="{{ url_for('static', filename='img/nationsglory.png') }}" alt="NationsGlory logo">
-                    <h1>NationsGlory - Bug Bounty</h1>
-                    <p>Identified vulnerabilities: bypassing 2FA via the API without a challenge when the IP address changes, account takeover by changing the email address without confirmation, and mass scraping of usernames, IDs, and IP addresses from the admin panel.</p>
+                <a class="p3" href="https://skrymi.com" target="_blank">
+                    <img id="skrymi-logo" src="{{ url_for('static', filename='img/skrymi.svg') }}" alt="Skrymi logo">
+                    <h1>Skrymi - Website Development</h1>
+                    <p>Designed and developed a custom website for a casino streamer. A paid service that remains in use and is actively maintained with regular updates.</p>
                 </a>
             </div>
+            <a href="{{ url_for('projects') }}" class="see-more-btn">See more →</a>
         </div>
         <div id="skills" class="skills">
             <h1>
