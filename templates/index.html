@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kaneme</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+    </head>
+    <body>
+        <nav class="topnav">
+            <span class="nav-name">Kaneme</span>
+            <div class="nav-links">
+                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="{{ url_for('skills') }}">Skills</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="hero">
+                <div class="title">
+                    <h1>
+                        Cybersecurity <span>Enthusiast</span>
+                    </h1>
+                    <h3>Bug Bounty · Developer</h3>
+                </div>
+                <div class="desc">
+                    <h3>
+                        <br>
+                        17y/o Cybersecurity student, offensive-focused.<br>
+                        <br>
+                        Bug Bounty, web & network vulnerability research, Python tool development. <br>
+                        <br>Soon @ Epitech Lille.
+                    </h3>
+                </div>
+                <a href="{{ url_for('projects') }}">[ Projects → ]</a>
+            </div>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='img/pdp.jpg') }}" alt="Kaneme">
+                <h2>Kaneme</h2>
+                <h4>Cybersecurity & Dev</h4>
+                <div class="socials">
+                    <a href="https://discord.com/users/1204477519902941185">
+                        <svg id="discord" width="64px" height="64px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/KanemeDev">
+                        <svg id="github" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10Z" fill="#ffffff"/>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg id="instagram" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path>
+                                <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="profile-location">
+                    <span>Paris, France</span>
+                    <span id="local-time"></span>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="projects">
+            <h1>
+                Recent <span>Projects</span>
+            </h1>
+            <div class="p-list">
+                <a class="p1" href="https://betify.com" target="_blank">
+                    <img id="betify-logo" src="{{ url_for('static', filename='img/betify.jpg') }}" alt="Betify logo">
+                    <h1>Betify - Bug Bounty</h1>
+                    <p>Bypassing 2FA via a rate-limiting vulnerability: the API blocked users by IP address rather than by account, allowing brute-force attacks using rotating proxies.</p>
+                </a>
+                <a class="p2" href="https://github.com/KanemeDev/MineScanner" target="_blank">
+                    <img id="minescanner-logo" src="{{ url_for('static', filename='img/minescanner.png') }}" alt="MineScanner logo">
+                    <h1>MineScanner - Scanning Tool</h1>
+                    <p>Multi-threaded Minecraft server scanner written in Python scans IP ranges and port intervals to detect active servers.</p>
+                </a>
+                <a class="p3" href="https://nationsglory.fr" target="_blank">
+                    <img id="nationsglory-logo" src="{{ url_for('static', filename='img/nationsglory.png') }}" alt="NationsGlory logo">
+                    <h1>NationsGlory - Bug Bounty</h1>
+                    <p>Identified vulnerabilities: bypassing 2FA via the API without a challenge when the IP address changes, account takeover by changing the email address without confirmation, and mass scraping of usernames, IDs, and IP addresses from the admin panel.</p>
+                </a>
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <h1>
+                Skills & <span>Tools</span>
+            </h1>
+            <div class="s-list">
+                <div class="s-group-label">Languages & Frameworks</div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/python/7990FF" alt="Python">
+                    <h2>Python</h2>
+                    <p>Scripting, automation & tool development</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/javascript/7990FF" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                    <p>Frontend logic & browser scripting</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/html5/7990FF" alt="HTML">
+                    <h2>HTML</h2>
+                    <p>Semantic markup & page structure</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/css/7990FF" alt="CSS">
+                    <h2>CSS</h2>
+                    <p>Layouts, animations & styling</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/figma/7990FF" alt="Figma">
+                    <h2>Figma</h2>
+                    <p>Interface design & prototyping</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/postgresql/7990FF" alt="SQL">
+                    <h2>SQL</h2>
+                    <p>Database querying & management</p>
+                </div>
+                <div class="s-group-label">Tools</div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/portswigger/ffffff" alt="Burp Suite">
+                    <h2>Burp Suite</h2>
+                    <p>Web application penetration testing</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+                    <h2>GitHub</h2>
+                    <p>Version control & project management</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/wireshark/ffffff" alt="Wireshark">
+                    <h2>Wireshark</h2>
+                    <p>Network traffic analysis</p>
+                </div>
+                <div class="s-item">
+                    <img src="https://cdn.simpleicons.org/linux/ffffff" alt="Linux">
+                    <h2>Linux</h2>
+                    <p>Primary OS for development & research</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="contact-box">
+                <div class="contact-box-header">
+                    <h2>Contact</h2>
+                    <p>
+                        Open to opportunities, collaborations,<br>and responsible disclosure.
+                    </p>
+                </div>
+                <div class="contact-box-links">
+                    <a class="contact-link" href="mailto:contact@kaneme.click">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>contact@kaneme.click</span>
+                    </a>
+                    <a class="contact-link" href="https://github.com/KanemeDev" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10Z" fill="currentColor"/>
+                        </svg>
+                        KanemeDev
+                
+                    </a>
+                    <a class="contact-link" href="https://discord.com/users/1204477519902941185" target="_blank">
+                        <svg viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="currentColor"/>
+                        </svg>
+                        kanemejcroisbien
+                
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">© 2026 Kaneme · France</footer>
+        <script>
+            function updateClock() {
+                const time = new Date().toLocaleTimeString('fr-FR', {
+                    timeZone: 'Europe/Paris',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                const el = document.getElementById('local-time');
+                if (el)
+                    el.textContent = time + ' GMT+2';
+            }
+            updateClock();
+            setInterval(updateClock, 1000);
+        </script>
+    </body>
+</html>

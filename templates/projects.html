@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Kaneme</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+    </head>
+    <body class="projects-page">
+        <nav class="topnav">
+            <a class="nav-name" href="{{ url_for('home') }}">Kaneme</a>
+            <div class="nav-links">
+                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="{{ url_for('skills', _anchor='skills') }}">Skills</a>
+                <a href="{{ url_for('contact', _anchor='contact') }}">Contact</a>
+            </div>
+        </nav>
+
+        <main class="projects">
+            <h1>
+                All my <span>Projects</span>
+            </h1>
+            <div class="p-list">
+                <a class="p1" href="https://betify.com" target="_blank" rel="noopener noreferrer">
+                    <img id="betify-logo" src="{{ url_for('static', filename='img/betify.jpg') }}" alt="Betify logo">
+                    <h1>Betify - Bug Bounty</h1>
+                    <p>Bypassing 2FA via a rate-limiting vulnerability: the API blocked users by IP address rather than by account, allowing brute-force attacks using rotating proxies.</p>
+                </a>
+                <a class="p2" href="https://github.com/KanemeDev/MineScanner" target="_blank" rel="noopener noreferrer">
+                    <img id="minescanner-logo" src="{{ url_for('static', filename='img/minescanner.png') }}" alt="MineScanner logo">
+                    <h1>MineScanner - Scanning Tool</h1>
+                    <p>Multi-threaded Minecraft server scanner written in Python scans IP ranges and port intervals to detect active servers.</p>
+                </a>
+                <a class="p3" href="https://nationsglory.fr" target="_blank" rel="noopener noreferrer">
+                    <img id="nationsglory-logo" src="{{ url_for('static', filename='img/nationsglory.png') }}" alt="NationsGlory logo">
+                    <h1>NationsGlory - Bug Bounty</h1>
+                    <p>Identified vulnerabilities: bypassing 2FA via the API without a challenge when the IP address changes, account takeover by changing the email address without confirmation, and mass scraping of usernames, IDs, and IP addresses from the admin panel.</p>
+                </a>
+            </div>
+        </main>
+        <footer class="footer">© 2026 Kaneme · France</footer>
+    </body>
+</html>

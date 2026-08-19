@@ -195,6 +195,16 @@ body {
 }
 
 /* ── Projects section ── */
+.projects-page .projects {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 144px 5% 80px;
+}
+
+.projects-page .p-list {
+    left: 0;
+}
+
 .projects {
     padding: 80px 0 80px 15%;
     max-width: 1300px;
