@@ -37,9 +37,14 @@
                 <a class="p3" href="https://nationsglory.fr" target="_blank" rel="noopener noreferrer">
                     <img id="nationsglory-logo" src="{{ url_for('static', filename='img/nationsglory.png') }}" alt="NationsGlory logo">
                     <h1>NationsGlory - Bug Bounty</h1>
-                    <p>Identified vulnerabilities: bypassing 2FA via the API without a challenge when the IP address changes, account takeover by changing the email address without confirmation, and mass scraping of usernames, IDs, and IP addresses from the admin panel.</p>
+                    <p>Identified vulnerabilities: bypassing Admin Panel security via the API which doesn't require a challenge when the IP address changes, account takeover by changing the email address without confirmation, and mass scraping of usernames, IDs, and IP addresses from the admin panel.</p>
                 </a>
-                <a class="p4" href="https://skrymi.com" target="_blank" rel="noopener noreferrer">
+                <a class="p4" href="#" target="_blank" rel="noopener noreferrer">
+                    <img id="omgserv-logo" src="{{ url_for('static', filename='img/omgserv.jpg') }}" alt="OMGSERV logo">
+                    <h1>OMGSERV - Bug Bounty</h1>
+                    <p>Bypassing 2FA via brute-force: the 6-digit OTP code has no rate limiting or lockout, allowing automated guessing of all 600,000 possible combinations.</p>
+                </a>
+                <a class="p5" href="https://skrymi.com" target="_blank" rel="noopener noreferrer">
                     <img id="skrymi-logo" src="{{ url_for('static', filename='img/skrymi.svg') }}" alt="Skrymi logo">
                     <h1>Skrymi - Website Development</h1>
                     <p>Designed and developed a custom website for a casino streamer. A paid service that remains in use and is actively maintained with regular updates.</p>
