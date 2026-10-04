@@ -479,6 +479,60 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* ── Responsive: laptop ── */
+@media (max-width: 1300px) {
+    .main {
+        padding: 100px 5% 60px;
+        gap: 32px;
+    }
+
+    .hero {
+        padding: 0;
+        max-width: 600px;
+    }
+
+    .hero .title h1 {
+        font-size: 3rem;
+    }
+
+    .hero .desc {
+        max-width: 100%;
+    }
+
+    .projects {
+        padding: 60px 5%;
+    }
+
+    .p-list {
+        left: 0;
+        max-width: 100%;
+    }
+
+    .see-more-btn {
+        left: 0;
+    }
+
+    .skills {
+        padding: 60px 5%;
+    }
+
+    .s-list {
+        left: 0;
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 32px 5%;
+    }
+}
+
+/* ── Responsive: large laptop ── */
+@media (max-width: 1750px) {
+    .hero .title h1 {
+        white-space: normal;
+    }
+}
+
 /* ── Responsive: tablet ── */
 @media (max-width: 900px) {
     .main {
@@ -572,6 +626,10 @@ body {
         left: 0;
     }
 
+    .see-more-btn {
+        left: 0;
+    }
+
     .skills {
         padding: 60px 5%;
     }
@@ -606,6 +664,7 @@ body {
 
     .hero .title h1 {
         font-size: 2rem;
+        white-space: normal;
     }
 
     .hero .title h3 {
